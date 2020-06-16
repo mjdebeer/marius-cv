@@ -1,0 +1,58 @@
+<div class="jumbotron-fluid bg-light p-5 mb-4">
+  <h1 class="display-4 text-center">Web Development</h1>
+  <p class="text-center">This is a summary of the web development work I had done while (mostly) working another full-time job. After 4 years of learning and freelance work I am now at the point where I am ready to take on a full-time developer role.</p>
+  <h5 class="text-center mt-5 mb-3">Some technologies/languages I have worked with:</h5>
+  <ul class="d-flex flex-wrap justify-content-center list-unstyled">
+    <li class="bg-light-blue my-1 text-light p-2 m-2" *ngFor="let item of content.technologies">
+      {{item}}
+    </li>
+  </ul>
+</div>
+
+<div class="jumbotron-fluid bg-light p-5 mb-4">
+  <h3>Freelance work (2017 - 2020)</h3>
+  <h5 class="p-5">WordPress & static sites (I created the WordPress themes from scratch)</h5>
+  <app-cards></app-cards>
+  <h5 class="jumbotron-fluid p-5 bg-secondary text-light"><i class="fa fa-info-circle" aria-hidden="true"></i> I also did various small coding jobs online which mainly consisted of fixing bugs on websites.</h5>
+</div>
+
+<div class="card bg-dark mb-3">
+  <div class="card-body">
+    <h1 class="card-title text-center text-light">Some History</h1>
+  </div>
+  <img src="assets/img/history.jpg" style="height: 250px; object-fit: cover" class="card-img-top" alt="...">
+</div>
+
+<div class="jumbotron-fluid bg-light p-5 mb-4">
+  <h3>AEMG Studios (2019 - 2020)</h3>
+  <p class="text-secondary"><em>I am currently employed in a senior managerial position, reporting to the CEO.</em></p>
+  <p>At AEMG I put together a similar system to the one we used at Africa Audio Post (below). Ultimately my goal was to build a web application with a JS framework to replace the Google Sheets system (which is why I decided to focus heavily on sharpening my Javascript skills). I learnt a lot about solving complex data problems with code.</p>
+  <p>The current system uses Google scripts and formulas to complete various tasks, for example:</p>
+  <ul>
+    <li>Calculate totals to display on overview pages</li>
+    <li>Process data for staff performance monitoring</li>
+    <li>
+      <p>Process form data:</p>
+      <ul>
+        <li>Create Artist Sheet inside “Artists” spreadsheet </li>
+        <li>Name the sheet according to form input</li>
+        <li>Generate and add an ID to the sheet</li>
+        <li>Add the form data to an overview sheet</li>
+        <li>Add a link to the Artist Sheet in the new row on the overview sheet</li>
+      </ul>
+    </li>
+  </ul>
+  <p>I used the opportunity to try different ways of structuring data and test out what works the most intuitively. I also built a   <a href="http://aemg.africa/aemgweb/">website </a>for this studio. This one is just static.</p>
+
+  <p>While working at AEMG I was able to broaden my web development skills a lot through various online and other resources. </p>
+</div>
+
+<div class="jumbotron-fluid bg-light p-5 mb-4">
+  <h3>Africa Audio Post (2016 - 2018)</h3>
+  <p class="text-secondary"><em>I was employed in a mid-level managerial position overseeing recording of broadcast audio (dubbing).</em></p>
+  <p>I started experimenting with Google scripts for automating tedious tasks. This would lead to more efficient recording sessions and streamlined production.</p>
+  <p>The scripts would mainly make small real-time calculations based on minimal user input related to pending or completed work. The results would be displayed on a dashboard where staff can track recording progress.</p>
+  <p>I also used Google scripts to add ‘formulas’ to Google Sheets.</p>
+  <p>Started learning Ruby, Ruby on Rails and front-end development.</p>
+  <p>Discovered WordPress and built a website for the studio. (They have replaced it since)</p>
+</div>

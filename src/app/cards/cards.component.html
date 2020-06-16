@@ -1,0 +1,14 @@
+<div class="row row-cols-1 row-cols-md-3">
+  <div *ngFor="let card of cardsCollection" class="col mb-4">
+    <div class="card">
+      <a class="text-dark" href="{{card.url}}">
+        <img src={{card.image.src}} class="card-img-top" alt={{card.image.alt}}>
+        <div class="card-body">
+          <h5 class="card-title">{{card.title}}</h5>
+          <p class="card-text">{{card.text}}</p>
+          
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
