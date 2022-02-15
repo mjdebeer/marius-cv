@@ -8,7 +8,7 @@ import { CardsComponent } from '../cards/cards.component';
 })
 export class BodyComponent implements OnInit {
   content = {
-    technologies: ['CSS3', 'HTML5', 'Javascript', 'ES2015', 'ES2016', 'ES2017', 'jQuery', 'PHP', 'Git', 'NPM', 'React', 'Ruby', 'Angular', 'Typescript', 'Node.js', 'Rails', 'Express.js', 'AWS', 'Google Cloud', 'MongoDB', 'Bootstrap', 'Firebase']
+    technologies: ['Java', 'Spring Boot', 'Apache Kafka', 'AWS', 'PostgreSql', 'CSS3', 'HTML5', 'Javascript', 'ES2015', 'ES2016', 'ES2017', 'jQuery', 'PHP', 'Git', 'NPM', 'React', 'Ruby', 'Angular', 'Typescript', 'Node.js', 'Rails', 'Express.js', 'AWS', 'Google Cloud', 'MongoDB', 'Bootstrap', 'Firebase']
   }
   constructor() { }
 
