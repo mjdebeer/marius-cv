@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ProductsPricedReq} from '../../../domain/products-priced/products-priced-req.model';
+import {ProductsPricedService} from '../../../domain/products-priced/products-priced.service';
 
 @Component({
   selector: 'app-products-priced',
@@ -7,17 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsPricedComponent implements OnInit {
 
-  countryOfResidency: string;
-  departureCountry: string;
-  destinationCountry: string;
-  oneWay: string;
-  departureDate: string;
-  returnDate: string;
+  params: ProductsPricedReq = {
+    countryOfResidency: '',
+    departureCountry: '',
+    departureDate: '',
+    destinationCountry: '',
+    oneWay: false,
+    returnDate: '',
+  };
 
-  constructor() { }
+  constructor(private productsPricedService: ProductsPricedService) { }
 
   ngOnInit(): void {
 
+  }
+
+  onSubmit() {
+    this.productsPricedService.getProducts(this.params);
   }
 
 }

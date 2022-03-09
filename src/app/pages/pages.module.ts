@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {
+  NbButtonModule,
   NbCardModule,
   NbDatepickerModule,
   NbFormFieldModule,
@@ -30,6 +31,7 @@ import {CommonModule} from '@angular/common';
     NbFormFieldModule,
     NbListModule,
     NbToggleModule,
+    NbButtonModule,
     CommonModule,
     ReactiveFormsModule,
   ],

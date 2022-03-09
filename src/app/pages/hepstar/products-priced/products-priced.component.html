@@ -5,16 +5,17 @@
         <p class="text-center">Products Priced</p>
         <div class="d-flex">
           <nb-list>
-            <nb-list-item class="list-item"><input nbInput [(ngModel)]="countryOfResidency" type="text" placeholder="Country Of Residency"></nb-list-item>
-            <nb-list-item class="list-item"><input nbInput [(ngModel)]="departureCountry" type="text" placeholder="Departure Country"></nb-list-item>
-            <nb-list-item class="list-item"><input nbInput [(ngModel)]="destinationCountry" type="text" placeholder="Destination Country"></nb-list-item>
+            <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.countryOfResidency" type="text" placeholder="Country Of Residency"></nb-list-item>
+            <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.departureCountry" type="text" placeholder="Departure Country"></nb-list-item>
+            <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.destinationCountry" type="text" placeholder="Destination Country"></nb-list-item>
           </nb-list>
           <nb-list>
             <nb-list-item class="list-item"><p class="return-flight">Return Flight</p><nb-toggle></nb-toggle></nb-list-item>
-            <nb-list-item class="list-item"><input nbInput [(ngModel)]="departureDate" type="text" placeholder="Departure Date"></nb-list-item>
-            <nb-list-item class="list-item"><input nbInput [(ngModel)]="returnDate" type="text" placeholder="Return Date"></nb-list-item>
+            <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.departureDate" type="text" placeholder="Departure Date"></nb-list-item>
+            <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.returnDate" type="text" placeholder="Return Date"></nb-list-item>
           </nb-list>
         </div>
+        <button nbButton (click)="onSubmit()" status="basic" class="mt-4">Submit</button>
       </nb-card-body>
     </nb-card>
 </div>
