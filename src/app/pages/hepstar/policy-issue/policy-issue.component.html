@@ -1,1 +1,25 @@
-<p>policy-issue works!</p>
+<div class="m-4 container nb-theme-default">
+  <nb-card>
+    <nb-card-body class="m-4 p-4 m-auto card-body">
+      <h3 class="text-center">Hepstar</h3>
+      <p class="text-center">Policy Request</p>
+      <div class="d-flex">
+        <nb-list>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="firstName" type="text" placeholder="Name"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="surname" type="text" placeholder="Surname"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="email" type="text" placeholder="Email"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="nationalId" type="text" placeholder="National ID Number"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="dateOfBirth" type="text" placeholder="Date Of Birth"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="countryOfResidency" type="text" placeholder="Country Of Residency"></nb-list-item>
+        </nb-list>
+        <nb-list>
+          <nb-list-item class="list-item"><p class="return-flight">Return Flight</p><nb-toggle [(ngModel)]="oneWay"></nb-toggle></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="departureDate" type="text" placeholder="Departure Date"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="returnDate" type="text" placeholder="Return Date"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="departureCountry" type="text" placeholder="Departure Country"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="destinationCountry" type="text" placeholder="Destination Country"></nb-list-item>
+        </nb-list>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</div>

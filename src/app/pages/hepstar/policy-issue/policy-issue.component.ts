@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PolicyIssueComponent implements OnInit {
 
+  firstName: string;
+  surname: string;
+  email: string;
+  nationalId: string;
+  dateOfBirth: string;
+  countryOfResidency: string;
+  oneWay: boolean;
+  departureDate: string;
+  returnDate: string;
+  departureCountry: string;
+  destinationCountry: string;
+
   constructor() { }
 
   ngOnInit(): void {
