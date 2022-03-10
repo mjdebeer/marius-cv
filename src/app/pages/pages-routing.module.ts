@@ -4,6 +4,7 @@ import {PagesComponent} from './pages.component';
 import {ProductsPricedComponent} from './hepstar/products-priced/products-priced.component';
 import {PolicyIssueComponent} from './hepstar/policy-issue/policy-issue.component';
 import {MariusCvComponent} from './marius-cv/marius-cv.component';
+import {ProductsListComponent} from './hepstar/products-list/products-list.component';
 
 const routes: Routes = [{
   path: '',
@@ -25,6 +26,10 @@ const routes: Routes = [{
     {
       path: 'hepstar/policy-issue',
       component: PolicyIssueComponent,
+    },
+    {
+      path: 'hepstar/products-list',
+      component: ProductsListComponent,
     },
     {
       path: '**',

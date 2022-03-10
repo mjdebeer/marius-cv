@@ -5,22 +5,22 @@
       <p class="text-center">Policy Request</p>
       <div class="d-flex">
         <nb-list>
-          <nb-list-item class="list-item"><input nbInput [(ngModel)]="firstName" type="text" placeholder="Name"></nb-list-item>
-          <nb-list-item class="list-item"><input nbInput [(ngModel)]="surname" type="text" placeholder="Surname"></nb-list-item>
-          <nb-list-item class="list-item"><input nbInput [(ngModel)]="email" type="text" placeholder="Email"></nb-list-item>
-          <nb-list-item class="list-item"><input nbInput [(ngModel)]="nationalId" type="text" placeholder="National ID Number"></nb-list-item>
-          <nb-list-item class="list-item"><input nbInput [(ngModel)]="dateOfBirth" type="text" placeholder="Date Of Birth"></nb-list-item>
-          <nb-list-item class="list-item"><input nbInput [(ngModel)]="countryOfResidency" type="text" placeholder="Country Of Residency"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.firstName" type="text" placeholder="Name"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.surname" type="text" placeholder="Surname"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.email" type="text" placeholder="Email"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.nationalId" type="text" placeholder="National ID Number"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.dateOfBirth" type="text" placeholder="Date Of Birth"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.countryOfResidency" type="text" placeholder="Country Of Residency"></nb-list-item>
         </nb-list>
         <nb-list>
-          <nb-list-item class="list-item"><p class="return-flight">Return Flight</p><nb-toggle [(ngModel)]="oneWay"></nb-toggle></nb-list-item>
-          <nb-list-item class="list-item"><input nbInput [(ngModel)]="departureDate" type="text" placeholder="Departure Date"></nb-list-item>
-          <nb-list-item class="list-item"><input nbInput [(ngModel)]="returnDate" type="text" placeholder="Return Date"></nb-list-item>
-          <nb-list-item class="list-item"><input nbInput [(ngModel)]="departureCountry" type="text" placeholder="Departure Country"></nb-list-item>
-          <nb-list-item class="list-item"><input nbInput [(ngModel)]="destinationCountry" type="text" placeholder="Destination Country"></nb-list-item>
+          <nb-list-item class="list-item"><p class="return-flight">One Way</p><nb-toggle [(ngModel)]="params.oneWay"></nb-toggle></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.departureDate" type="text" placeholder="Departure Date"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.returnDate" type="text" placeholder="Return Date"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.departureCountry" type="text" placeholder="Departure Country"></nb-list-item>
+          <nb-list-item class="list-item"><input nbInput [(ngModel)]="params.destinationCountry" type="text" placeholder="Destination Country"></nb-list-item>
         </nb-list>
       </div>
-      <button nbButton status="basic" class="mt-4">Submit</button>
+      <button nbButton (click)="onSubmit()" status="basic" class="mt-4">Submit</button>
     </nb-card-body>
   </nb-card>
 </div>

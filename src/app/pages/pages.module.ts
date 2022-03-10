@@ -19,6 +19,7 @@ import {FooterComponent} from './marius-cv/footer/footer.component';
 import {CardsComponent} from './marius-cv/cards/cards.component';
 import { MariusCvComponent } from './marius-cv/marius-cv.component';
 import {CommonModule} from '@angular/common';
+import { ProductsListComponent } from './hepstar/products-list/products-list.component';
 
 @NgModule({
   imports: [
@@ -44,6 +45,7 @@ import {CommonModule} from '@angular/common';
     FooterComponent,
     CardsComponent,
     MariusCvComponent,
+    ProductsListComponent,
   ],
 })
 export class PagesModule {
