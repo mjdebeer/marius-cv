@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {DataService} from '../../../domain/base/data.service';
 import {ProductsPricedRes} from '../../../domain/products-priced/products-priced-res.model';
-import {PolicyIssueService} from '../../../domain/policy-issue/policy-issue.service';
 
 @Component({
   selector: 'app-products-list',

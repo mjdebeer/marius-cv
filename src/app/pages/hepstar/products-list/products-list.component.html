@@ -1,5 +1,5 @@
 <div class="container">
-  <nb-card *ngFor="let product of productsPriced">
+  <nb-card *ngFor="let product of productsPriced" class="d-flex">
     <nb-card-header>
       <h5>{{ product.title }}</h5>
     </nb-card-header>
@@ -8,6 +8,6 @@
       <p>{{ product.productId }}</p>
       <p>{{ product.details }}</p>
     </nb-card-body>
-    <button nbButton (click)="onSelection(product)">Select</button>
+    <button nbButton class="m-4" (click)="onSelection(product)">Select</button>
   </nb-card>
 </div>

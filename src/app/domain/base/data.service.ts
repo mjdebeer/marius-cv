@@ -9,7 +9,20 @@ export class DataService  {
 
   productsPriced: ProductsPricedRes[] = [];
   travelData: any = {};
-  policyIssueData: PolicyIssueReq;
+  policyIssueData: PolicyIssueReq = {
+    countryOfResidency: '',
+    dateOfBirth: '',
+    departureCountry: '',
+    departureDate: '',
+    destinationCountry: '',
+    email: '',
+    firstName: '',
+    surname: '',
+    nationalId: '',
+    oneWay: true,
+    productId: '',
+    returnDate: '',
+  };
 
   constructor(private http: HttpClient) {
   }
